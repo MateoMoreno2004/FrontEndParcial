@@ -1,0 +1,24 @@
+<h2>Registrar Clínica</h2>
+
+<form [formGroup]="clinicaForm" (ngSubmit)="onSubmit()">
+
+  <label>Nombre:</label>
+  <input type="text" formControlName="nombre">
+
+  <label>Dirección:</label>
+  <input type="text" formControlName="direccion">
+
+  <label>Cantidad de camas:</label>
+  <input type="number" formControlName="cantidadCamas">
+
+  <label>Teléfono:</label>
+  <input type="text" formControlName="telefono">
+
+  <label>Ciudad:</label>
+  <input type="text" formControlName="ciudad">
+
+  <label>Fecha de creación:</label>
+  <input type="date" formControlName="fechaCreacion">
+
+  <button type="submit">Guardar</button>
+</form>

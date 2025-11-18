@@ -1,0 +1,27 @@
+<h2>Listado de Clínicas</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Dirección</th>
+      <th>Camas</th>
+      <th>Teléfono</th>
+      <th>Ciudad</th>
+      <th>Fecha Creación</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let c of clinicas">
+      <td>{{ c.identificador }}</td>
+      <td>{{ c.nombre }}</td>
+      <td>{{ c.direccion }}</td>
+      <td>{{ c.cantidadCamas }}</td>
+      <td>{{ c.telefono }}</td>
+      <td>{{ c.ciudad }}</td>
+      <td>{{ c.fechaCreacion }}</td>
+    </tr>
+  </tbody>
+</table>
